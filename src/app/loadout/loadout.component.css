@@ -1,0 +1,13 @@
+#loadoutDetailContainer {
+  padding: 25px;
+}
+
+.itemImg {
+  object-fit: fill;
+  height: 85%;
+  width: 85%;
+}
+app-item-slot {
+  width: 100%;
+  height: 100%;
+}

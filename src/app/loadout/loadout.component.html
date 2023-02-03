@@ -1,0 +1,58 @@
+<div id="loadoutDetailContainer">
+  <mat-grid-list
+    cols="{{ nCols }}"
+    rowHeight="{{ rowHeight }}"
+    gutterSize="10px">
+    <!-- row head -->
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+      <app-item-slot>
+        <img class="itemImg" src="assets/hat.svg" />
+      </app-item-slot>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+
+    <!-- row torso -->
+    <mat-grid-tile>
+      <app-item-slot>
+        <img class="itemImg" src="assets/gloves.svg" />
+      </app-item-slot>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-item-slot>
+        <img class="itemImg" src="assets/shirt.svg" />
+      </app-item-slot>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-item-slot>
+        <img class="itemImg" src="assets/gloves.svg" />
+      </app-item-slot>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+
+    <!-- row legs -->
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+      <app-item-slot>
+        <img src="assets/pants.svg" class="itemImg" />
+      </app-item-slot>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile rowspan="2">
+      <app-item-slot>
+        <img class="itemImg" src="assets/backpack.svg" />
+      </app-item-slot>
+    </mat-grid-tile>
+
+    <!-- row legs -->
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+      <app-item-slot>
+        <img class="itemImg" src="assets/shoes.svg" />
+      </app-item-slot>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+  </mat-grid-list>
+</div>
+<app-inventory-drawer></app-inventory-drawer>

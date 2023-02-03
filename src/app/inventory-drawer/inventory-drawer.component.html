@@ -1,0 +1,18 @@
+<mat-accordion id="accordion">
+  <mat-expansion-panel [expanded]="isOpen" displayMode="flat">
+    <mat-expansion-panel-header>
+      <mat-panel-title>Inventory</mat-panel-title>
+      <mat-panel-description></mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="innerPanel">
+      <mat-grid-list cols="4" rowHeight="100px" gutterSize="15px">
+        <mat-grid-tile *ngFor="let e of emptyArr; index as i">
+          <app-item-slot *ngIf="i < items.length; else elseBlock">
+            <img class="itemImg" src="{{ items[i].iconUrl }}" />
+          </app-item-slot>
+          <ng-template #elseBlock><app-item-slot></app-item-slot></ng-template>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
